@@ -10,7 +10,7 @@ export class CartPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.cartItems = page.locator('li.list-item');
+    this.cartItems = page.locator('li.list-item').filter({ has: page.locator('button.delete') });
     this.totalPriceButton = page.getByRole('button', { name: 'Proceed to checkout' });
   }
 

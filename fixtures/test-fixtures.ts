@@ -3,7 +3,7 @@ import { test as base, expect } from '@playwright/test';
 
 import { HomePage } from '../pages/HomePage';
 import { CartPage } from '../pages/CartPage';
-import { CheckoutComponent } from '../pages/components/CheckoutComponent';
+import { CheckoutComponent } from '../components/CheckoutComponent';
 
 // Define the fixtures available to our tests
 type AppFixtures = {
